@@ -7,3 +7,58 @@
 @import "./components/btn_fct.scss";
 @import "./components/button.scss";
 @import "./components/heart.scss";
+@import "./components/home_card.scss";
+
+@import "./pages/home.scss";
+@import "./pages/restaurant.scss";
+
+body {
+    font-family: "Roboto", serif;
+}
+
+.location {
+    background-color: #EAE9EA;
+    display: flex;
+    border-top: solid 3px lightgrey;
+    border-bottom: solid 3px lightgrey;
+    justify-content: center;
+    p {
+        padding-left: 12px;
+    }
+    i {
+        padding-top: 15px;
+    }
+}
+
+.menu {
+    background-color: #F6F5F7;
+    height: 250px;
+    margin-top: 0;
+    padding-bottom: 20px;
+    h1 {
+        text-align: center;
+        margin-top: 0;
+        padding-top: 30px;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+.fonctionnement {
+    margin-top: 40px;
+    h1 {
+        margin-left: 20px;
+    }
+}
+
+.restaurants {
+    background-color: #F6F5F7;
+    margin-top: 60px;
+    padding-top: 30px;
+    h2 {
+        margin-left: 20px;
+    }
+
+}
+
