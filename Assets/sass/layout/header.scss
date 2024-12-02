@@ -7,3 +7,13 @@ header {
         margin-bottom: 10px;
     }
 }
+
+.header_restaurant {
+    display: flex;
+    align-items: flex-start;
+    gap: 15%;
+    padding-left: 5%;
+    i {
+        font-size: 25px;
+    }
+}

@@ -1,6 +1,6 @@
 footer {
     background-color: #353535;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 10px;
     p {
         color: white;
@@ -16,6 +16,12 @@ footer {
 
 .contenu_footer {
     margin-left: 20px;
+    .logo_small {
+        margin-bottom: 15px;
+    }
+    .last_p {
+        margin-top: 3px;
+    }
 }
 
 .icone_text {

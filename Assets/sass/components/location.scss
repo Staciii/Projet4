@@ -1,0 +1,13 @@
+.location {
+    background-color: #EAE9EA;
+    display: flex;
+    border-top: solid 3px lightgrey;
+    border-bottom: solid 3px lightgrey;
+    justify-content: center;
+    p {
+        padding-left: 12px;
+    }
+    i {
+        padding-top: 15px;
+    }
+}
