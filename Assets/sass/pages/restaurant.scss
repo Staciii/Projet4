@@ -1,3 +1,9 @@
+h1 {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .restaurants {
     background-color: #F6F5F7;
     margin-top: 60px;
@@ -37,9 +43,10 @@
     }
 }
 
-.heart {
+.title_restaurant {
     display: flex;
-    gap: 20%;
+    justify-content: center;
+    gap: 15px;
     align-items: center;
     i {
         font-size: 25px;
@@ -47,28 +54,121 @@
 }
 
 .entree_item {
+    display: flex;
+    /*align-items: center;
+    justify-content: space-between;*/
     background-color: white;
     border-radius: 10px;
-    padding-bottom: 15px;
+    /*padding-bottom: 15px;
     padding-top: 15px;
-    padding-right: 10px;
+    padding-right: 10px;*/
     padding-left: 10px;
     margin-top: 15px;
-    box-shadow: 1px 8px 18px -7px rgba(0,0,0,0.24)
-    ;
-    p {
+    box-shadow: 1px 8px 18px -7px rgba(0,0,0,0.24);
+    transition: all 500ms ease-in-out;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    .entree_text{
+        width: 80%;
+        transition: all 500ms ease-in-out;
+    }
+
+    h3 {
         margin-top: 0;
         margin-bottom: 0;
     }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
     .bold_text_entree {
         font-weight: bold;
+        padding-top: 10px;
     }
     .price_aligned {
         display: flex;
-        justify-content: space-between;
+        padding-right: 10px;
+        width: 30%;
+        justify-content: flex-end;
+        align-items: flex-end;
         p {
             margin-top: 0;
             margin-bottom: 0;
         }
     }
+    .check {
+       visibility: hidden;
+       opacity: 0;
+       width: 0;
+       transition: all 500ms ease-in-out;
+       .circle {
+        border-radius: 50%;
+        background-color: white;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fa-check {
+            color: $tertiary;
+        }
+    }
+    }
+    &:hover {
+        .entree_text {
+            width: 60%;
+        }
+        .check {
+            visibility: visible;
+            opacity: 1;
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $tertiary;
+            border-radius: 0 10px 10px 0;
+        }
+    }
 }
+
+@media screen and (min-width: 999px) {
+    section img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+    .block_restaurant {
+        margin-right: 150px;
+        margin-left: 150px;
+        border-radius: 25px;
+        h2 {
+            margin-left: 150px;
+        }
+        .entrees {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        .Plats {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        .desserts {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+    }
+
+}
+
+@keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(150px);
+              transform: translateX(150px);
+              opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+              opacity: 1;
+    }
+  }
+  

@@ -16,6 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/css/style.css" />
     <title>La palette du Gout | Oh My Food</title>
   </head>
@@ -33,52 +36,83 @@
         alt="image resataurant"
       />
       <div class="block_restaurant">
-        <div class="heart">
+        <div class="title_restaurant">
           <h1>La palette du goût</h1>
-          <i class="fa-regular fa-heart"></i>
+          <div class="heart">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
         </div>
         <h2>Entrées</h2>
         <div class="entrees">
           <div class="entree_item">
-            <p class="bold_text_entree">Fricassée d'escargots</p>
-            <div class="price_aligned">
-              <p>Au piment d'Espelette</p>
+            <div class="entree_text">
+                <h3 class="bold_text_entree">Fricassée d'escargots</h3>
+                <p>Au piment d'Espelette</p>
+            </div>
+            <div class="price_aligned"> 
               <p>25€</p>
+            </div>
+            <div class="check">
+                <div class="circle">
+                    <i class="fa-solid fa-check"></i>
+                </div>
             </div>
           </div>
           <div class="entree_item">
-            <p class="bold_text_entree">Foie gras de canard mi-cuit</p>
-            <div class="price_aligned">
-                <p>Et ses copeaux de truffe noire</p>
-                <p>35€</p>
-              </div>
+            <div class="entree_text">
+                <h3 class="bold_text_entree">Foie gras de canard mi-cuit</h3>
+                <p>Et ses copaux de truffe noire</p>
+            </div>
+            <div class="price_aligned"> 
+              <p>35€</p>
+            </div>
+            <div class="check">
+                <div class="circle">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+            </div>
           </div>
           <div class="entree_item">
-            <p class="bold_text_entree">Œuf au plat</p>
-            <div class="price_aligned">
-                <p>Assaisonné à la truffe sur lit de caviar</p>
-                <p>20€</p>
-              </div>
+            <div class="entree_text">
+                <h3 class="bold_text_entree">Œuf au plat</h3>
+                <p>Assaisonné à la truffe sur lit de canard</p>
+            </div>
+            <div class="price_aligned"> 
+              <p>20€</p>
+            </div>
+            <div class="check">
+                <div class="circle">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+            </div>
           </div>
         </div>
         <h2>Plats</h2>
         <div class="Plats">
           <div class="entree_item">
-            <p class="bold_text_entree">Filet de bœuf aux herbes</p>
+            <h3 class="bold_text_entree">Filet de bœuf aux herbes</h3>
+            <p>Accompagné de sa ribambelle de légumes</p>
+          </div>
             <div class="price_aligned">
-              <p>Accompagné de sa ribambelle de légumes</p>
               <p>40€</p>
             </div>
+            <div class="check">
+                <div class="circle">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+            </div>
           </div>
+        </div>
           <div class="entree_item">
-            <p class="bold_text_entree">Parmentier de queue de bœuf</p>
+            <h3 class="bold_text_entree">Parmentier de queue de bœuf</h3>
             <div class="price_aligned">
                 <p>À la truffe noire sur sa purée de panais</p>
                 <p>35€</p>
               </div>
           </div>
           <div class="entree_item">
-            <p class="bold_text_entree">Filet de turbot</p>
+            <h3 class="bold_text_entree">Filet de turbot</h3>
             <div class="price_aligned">
                 <p>Aux agrumes</p>
                 <p>44€</p>
@@ -115,23 +149,25 @@
       </div>
     </section>
     <footer>
-      <div class="contenu_footer">
-        <p class="logo_small">ohmyfood</p>
-        <div class="icone_text">
-          <i class="fa-solid fa-utensils"></i>
-          <p>Proposer un restaurant</p>
+        <div class="contenu_footer">
+          <p class="logo_small">ohmyfood</p>
+          <div class="menu_footer">
+            <div class="icone_text">
+              <i class="fa-solid fa-utensils"></i>
+              <p>Proposer un restaurant</p>
+            </div>
+            <div class="icone_text">
+              <i class="fa-solid fa-handshake-angle"></i>
+              <p>Devenir partenaire</p>
+            </div>
+            <div>
+              <p>Mentions légales</p>
+            </div>
+            <div class="last_p">
+              <p>Contact</p>
+            </div>
+          </div>
         </div>
-        <div class="icone_text">
-          <i class="fa-solid fa-handshake-angle"></i>
-          <p>Devenir partenaire</p>
-        </div>
-        <div>
-          <p>Mentions légales</p>
-        </div>
-        <div class="last_p">
-          <p>Contact</p>
-        </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>

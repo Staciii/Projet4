@@ -1,0 +1,17 @@
+.heart {
+    width: 35px;
+    position: relative;
+    .fa-solid {
+        color: $primary;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
+    &:hover .fa-solid {
+        opacity: 1;
+    }
+}

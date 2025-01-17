@@ -10,10 +10,39 @@ header {
 
 .header_restaurant {
     display: flex;
-    align-items: flex-start;
     gap: 15%;
     padding-left: 5%;
     i {
         font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .header_restaurant {
+        gap: 25%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .header_restaurant {
+        gap: 30%;
+    }
+}
+
+@media screen and (min-width: 756px) {
+    .header_restaurant {
+        gap: 35%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .header_restaurant {
+        gap: 35%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header_restaurant {
+        gap: 40%;
     }
 }
