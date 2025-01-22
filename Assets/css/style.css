@@ -309,6 +309,54 @@ footer i {
   padding-top: 15px;
 }
 
+/* HTML: <div class="loader"></div> */
+.container_loader {
+  animation: disapear 5s ease-in-out forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.container_loader .loader {
+  width: 50px;
+  aspect-ratio: 1;
+  --_c:no-repeat radial-gradient(farthest-side,#25b09b 92%,#0000);
+  background: var(--_c) top, var(--_c) left, var(--_c) right, var(--_c) bottom;
+  background-size: 12px 12px;
+  animation: l7 1s infinite;
+}
+@keyframes l7 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+
+.container_content {
+  opacity: 0;
+  animation: appear 3s ease-in-out 4.5s forwards;
+}
+
+@keyframes disapear {
+  0% {
+    opacity: 1;
+    display: flex;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    display: flex;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 h1 {
   font-family: "Shrikhand", serif;
   font-weight: 400;
@@ -364,6 +412,18 @@ h1 {
   font-size: 25px;
 }
 
+.entrees .entree_item {
+  animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.Plats .entree_item {
+  animation: slide-left 0.8s ease-in-out 700ms both;
+}
+
+.desserts .entree_item {
+  animation: slide-left 0.8s ease-in-out 1300ms both;
+}
+
 .entree_item {
   display: flex;
   /*align-items: center;
@@ -377,7 +437,6 @@ h1 {
   margin-top: 15px;
   box-shadow: 1px 8px 18px -7px rgba(0, 0, 0, 0.24);
   transition: all 500ms ease-in-out;
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .entree_item .entree_text {
   width: 80%;
@@ -411,6 +470,9 @@ h1 {
   visibility: hidden;
   opacity: 0;
   width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 500ms ease-in-out;
 }
 .entree_item .check .circle {
@@ -432,9 +494,6 @@ h1 {
   visibility: visible;
   opacity: 1;
   width: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #99E2D0;
   border-radius: 0 10px 10px 0;
 }
@@ -467,8 +526,8 @@ h1 {
 }
 @keyframes slide-left {
   0% {
-    -webkit-transform: translateX(150px);
-    transform: translateX(150px);
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
     opacity: 0;
   }
   100% {
