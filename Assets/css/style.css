@@ -202,7 +202,6 @@ footer i {
   text-align: center;
 }
 .button:hover {
-  /*background: brightness(0.2);*/
   background: linear-gradient(rgba(255, 121, 218, 0.8), rgba(147, 86, 220, 0.8));
   box-shadow: 1px 10px 25px -9px rgba(0, 0, 0, 0.77);
 }
